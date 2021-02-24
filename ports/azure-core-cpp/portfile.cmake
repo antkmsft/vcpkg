@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO Azure/azure-sdk-for-cpp
-    REF azure-core_1.0.0-beta.6
-    SHA512 91283c1520f594992a8ea939e1caccdf6574af992a722dcc76d08d3088161f0feb0991c88126c8294b4d1bf7e76ec6f96aa3c0065cdbd5fcc0f94af523f2f7db
+    REPO antkmsft/azure-sdk-for-cpp
+    REF azsdk-master_2021-02-23_17-06-37
+    SHA512 2ee4fcf67f8b34727961497afd860f7a6cf940a469e7f109a0abd8e015d733ddea36f92fd7b2505994b8a81ce953f2a3e7f8b1bb3ab3758a9be6d7624552e0c8
 )
 
 vcpkg_check_features(
@@ -25,4 +25,3 @@ file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 vcpkg_fixup_cmake_targets()
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 vcpkg_copy_pdbs()
-

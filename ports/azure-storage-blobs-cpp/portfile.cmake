@@ -1,11 +1,8 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# SPDX-License-Identifier: MIT
-
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-blobs_12.0.0-beta.8
-    SHA512 30266911729c7f6c499f834b2134c1657182228cf8ba003e993e8ecbb725c28014ac3a2892667bd804a044cfc7961c0b5c7e567144ddd3cb224c6c7736ed505a
+    REPO antkmsft/azure-sdk-for-cpp
+    REF azsdk-master_2021-02-23_17-06-37
+    SHA512 2ee4fcf67f8b34727961497afd860f7a6cf940a469e7f109a0abd8e015d733ddea36f92fd7b2505994b8a81ce953f2a3e7f8b1bb3ab3758a9be6d7624552e0c8
 )
 
 vcpkg_configure_cmake(
@@ -20,4 +17,3 @@ file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 vcpkg_fixup_cmake_targets()
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 vcpkg_copy_pdbs()
-

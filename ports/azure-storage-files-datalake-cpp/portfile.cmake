@@ -1,11 +1,8 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# SPDX-License-Identifier: MIT
-
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO Azure/azure-sdk-for-cpp
-    REF azure-storage-files-datalake_12.0.0-beta.8
-    SHA512 e5c767da318e5d709627c7fd0b72bf3ff401c0bb56a1476347d927100ee7724aac0472ccb5c9185fa1761bfb894ee8a5d48e0bea5987cbde376cba94250ca1ca
+    REPO antkmsft/azure-sdk-for-cpp
+    REF azsdk-master_2021-02-23_17-06-37
+    SHA512 2ee4fcf67f8b34727961497afd860f7a6cf940a469e7f109a0abd8e015d733ddea36f92fd7b2505994b8a81ce953f2a3e7f8b1bb3ab3758a9be6d7624552e0c8
 )
 
 vcpkg_configure_cmake(
@@ -20,4 +17,3 @@ file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 vcpkg_fixup_cmake_targets()
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 vcpkg_copy_pdbs()
-
