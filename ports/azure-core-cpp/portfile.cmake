@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO antkmsft/azure-sdk-for-cpp
-    REF core-1.3_identity-1.3_same-major
-    SHA512 21e14f9594c7b0ccbeed9f90c116a7c482f0f99543f869861a902bad01851ab724ef788268176fee12ef2a9c78c0b4c2a3d9a1f2e8287109fe39d22e15004796
+    REF core-2.0.b1_identity-2.0.b1_exact
+    SHA512 2d82ee81bd0c29ca0f82c676184c2a21d93ae4b337f56f2de2e021343a0b8e52c85a904522e8768840ff5c3155a6daf1c7b534545e773062cfd480288c4ea3c7
 )
 
 vcpkg_check_features(
