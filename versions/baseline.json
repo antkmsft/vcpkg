@@ -245,7 +245,7 @@
       "port-version": 1
     },
     "azure-core-cpp": {
-      "baseline": "2.1",
+      "baseline": "2.2",
       "port-version": 0
     },
     "azure-identity-cpp": {
