@@ -249,7 +249,7 @@
       "port-version": 0
     },
     "azure-identity-cpp": {
-      "baseline": "2.0.beta.2",
+      "baseline": "2.0",
       "port-version": 0
     },
     "azure-iot-sdk-c": {
