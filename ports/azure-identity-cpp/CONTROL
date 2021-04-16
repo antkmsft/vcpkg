@@ -1,5 +1,5 @@
 Source: azure-identity-cpp
-Version: 2.2
+Version: 2.3
 Build-Depends: azure-core-cpp
 Description: Microsoft Azure Identity SDK for C++
   This library provides common authentication-related abstractions for Azure SDK.
