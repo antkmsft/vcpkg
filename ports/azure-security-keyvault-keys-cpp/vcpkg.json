@@ -11,7 +11,8 @@
   "dependencies": [
     {
       "name": "azure-security-keyvault-common-cpp",
-      "default-features": false
+      "default-features": false,
+      "version>=": "1.1.0"
     },
     {
       "name": "vcpkg-cmake",
