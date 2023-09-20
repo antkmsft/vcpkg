@@ -7,6 +7,8 @@ vcpkg_from_github(
         00100-shorten_paths.patch
 )
 
+file(RENAME ${SOURCE_PATH}/sdk/eventhubs/azure-messaging-eventhubs/ ${SOURCE_PATH}/sdk/eventhubs/eventhubs/)
+
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}/sdk/eventhubs/eventhubs/"
     OPTIONS
